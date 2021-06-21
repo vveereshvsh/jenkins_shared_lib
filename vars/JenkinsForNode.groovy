@@ -14,7 +14,7 @@ def call(String repoURl){
     stages{
       stage("Checkout SCM"){
        
-        step{ 
+        steps{ 
           
           git branch: 'master',
 	           url: "${repoURl}"
@@ -23,7 +23,7 @@ def call(String repoURl){
               
       }
       stage("Npm Install"){
-        step{
+        steps{
           
          sh "npm install" 
           
