@@ -1,5 +1,5 @@
 
-def call(string repoURl){
+def call(String repoURl){
   
   pipeline{
     
